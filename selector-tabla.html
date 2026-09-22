@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo de tabla de contactos</title>
+  <style>
+    /* Estilo base para la tabla */
+    #contactos {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    /* Encabezados */
+    #contactos th {
+      text-align: left;
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px;
+    }
+
+    /* Celdas */
+    #contactos td {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    /* Filas alternas */
+    #contactos tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    /* Hover */
+    #contactos tr:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lista de contactos</h1>
+
+  <table id="contactos">
+    <tr>
+      <th>Nombre</th>
+      <th>Correo</th>
+      <th>País</th>
+    </tr>
+    <tr>
+      <td>Juan Torres Torres</td>
+      <td>correo@gmail.com</td>
+      <td>México</td>
+    </tr>
+    <tr>
+      <td>María Pérez López</td>
+      <td>maria@gmail.com</td>
+      <td>Argentina</td>
+    </tr>
+    <tr>
+      <td>Carlos Ramírez</td>
+      <td>carlos@hotmail.com</td>
+      <td>Chile</td>
+    </tr>  
+    <tr>
+      <td>Ana Torres</td>
+      <td>ana@yahoo.com</td>
+      <td>México</td>
+    </tr>
+  </table>
+</body>
+</html>
