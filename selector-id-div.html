@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo CSS con div y id</title>
+  <style>
+    /* Estilo que afecta únicamente al div con id="div1" */
+    #div1 {
+      height: 500px;            /* altura fija */
+      text-align: center;       /* centra el texto */
+      background: #1abc9c;      /* color de fondo */
+      color: white;             /* color del texto */
+      font-size: 30px;          /* tamaño base del texto */
+      padding: 20px;            /* espacio interno */
+    }
+
+    /* Ajustes específicos a los títulos dentro del div */
+    #div1 h1 {
+      margin: 0;                /* quitar espacio extra arriba */
+      font-size: 2.5em;         /* tamaño mayor al texto base */
+    }
+
+    #div1 h3 {
+      margin-top: 10px;         /* espacio con respecto al h1 */
+      font-weight: normal;      /* subtítulo menos destacado */
+    }
+  </style>
+</head>
+<body>
+  <div id="div1">
+    <h1>Mi título</h1>
+    <h3>Este es el sub-título</h3>
+    <h1>Mi version </h1>
+  </div>
+</body>
+</html>
