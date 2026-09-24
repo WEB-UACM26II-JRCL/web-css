@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo de selectores de atributos</title>
+  <style> 
+    /* Aplica fondo azul a todos los div cuya clase contenga "clase" */
+    div[class*="clase"] {
+      background: blue;
+      color: white;
+      padding: 10px;
+      margin: 5px 0;
+    }
+
+    /* Aplica fondo rojo a todas las imágenes cuyo src contenga "tux" */
+    img[src*="tux"] {
+      background: red;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="11clase">Div con clase 11clase.</div>
+  <div class="1clase1">Div con clase 1clase1.</div>
+  <div class="clase11">Div con clase clase11.</div>
+
+  <p class="clase11">Párrafo con clase clase11 (no afectado porque la regla es solo para div).</p>
+
+  <img src="linux.png" alt="Logo Linux" width="20%" height="20%">
+  <img src="tux.png" alt="Logo Tux" width="20%" height="20%">
+</body>
+</html>
