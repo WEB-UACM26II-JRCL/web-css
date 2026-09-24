@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo de múltiples selectores</title>
+  <style>
+    /* Selector universal: aplica negritas a todo */
+    * {
+      font-weight: bold;
+    }
+
+    /* Selector por etiqueta */
+    p {
+      font-style: italic;
+    }
+
+    /* Selectores por clase */
+    .ejemplo2 {
+      text-align: center;
+      background-color: fuchsia;
+      color: blue;
+    }
+
+    .ejemplo3 {
+      text-align: right;
+      background-color: turquoise;
+      color: darkblue;
+    }
+
+    .clase {
+      text-align: right;
+      background-color: turquoise;
+      color: red;
+    }
+
+    /* Selector múltiple: afecta a h1 y h3 */
+    h1, h3 {
+      color: green;
+    }
+
+    /* Selector por id */
+    #miId {
+      text-align: center;
+      background-color: fuchsia;
+      color: black;
+    }
+
+    /* Selecciona todos los elementos h2 donde su padre es un div */
+    div > h2 {
+      text-align: left;
+      background-color: green;
+      color: white;
+    }
+
+    /*Selecciona todos los elementos p que están inmediatamente después de un div, pero no un hijo*/
+    div ~ p {
+      text-align: center;
+      background-color: khaki;
+      color: purple;
+    }
+  </style>
+</head>
+<body>
+  <h1>Es el título h1</h1>
+  <h3>Es el título h3</h3>   
+
+  <div class="clase">Div por clase</div>
+  <div class="ejemplo2">Div con el segundo estilo</div>
+  <div class="ejemplo3">Div con el tercer estilo</div>
+  <div id="miId">Div por id</div>
+
+  <div class="clase">
+    <h2>Soy un h2 y mi padre es un div</h2>
+    <p>Otro div por clase y con cursiva por párrafo</p>
+  </div>
+  <h1> jajaj </h1>
+  <p>Solo un párrafo 1</p> 
+  <h2>Solo un h2</h2>  
+  <p>Solo un párrafo 2</p> 
+</body>
+</html>
