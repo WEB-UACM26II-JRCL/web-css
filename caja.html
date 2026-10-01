@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo de pseudoelementos y caja CSS</title>
+  <style>
+    /* Estilo que afecta la primera letra de cada párrafo */
+    p::first-letter {
+      font-size: 25px;     /* más grande */
+      font-weight: bold;   /* en negrita */
+      color: green;        /* en color verde */
+    }
+
+    /* Estilos de la caja para el div */
+    div {
+      background-color: lightgrey; /* fondo gris claro */
+      width: 300px;                /* ancho fijo */
+      border: 35px solid green;    /* borde ancho y verde */
+      padding: 100px;              /* espacio interno */
+      margin: 10px;                /* espacio externo */
+    }
+  </style>
+</head>
+<body>
+  <h2>El cuervo</h2>
+
+  <p>
+    Una vez, al filo de una lúgubre medianoche, mientras débil y cansado, 
+    en tristes reflexiones embebido, inclinado sobre un viejo y raro libro 
+    de olvidada ciencia, cabeceando, casi dormido, oyóse de súbito un leve 
+    golpe, como si suavemente tocaran, tocaran a la puerta de mi cuarto. 
+    "Es —dije musitando— un visitante tocando quedo a la puerta de mi cuarto. 
+    Eso es todo, y nada más."
+  </p>
+
+  <div>
+    Ah aquel lúcido recuerdo de un gélido diciembre; espectros de brasas 
+    moribundas reflejadas en el suelo; angustia del deseo del nuevo día; 
+    en vano encareciendo a mis libros dieran tregua a mi dolor. Dolor por 
+    la pérdida de Leonora, la única, virgen radiante, Leonora por los ángeles 
+    llamada. Aquí ya sin nombre, para siempre.
+  </div>
+</body>
+</html>
