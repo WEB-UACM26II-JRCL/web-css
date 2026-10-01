@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Desplazamiento de elementos con CSS</title>
+
+    <style>
+        /* Estilo general de la página */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilo base de las cajas */
+        .caja {
+            width: 150px;
+            height: 100px;
+            margin: 10px;
+            padding: 10px;
+
+            color: white;
+            background-color: blue;
+            border: 2px solid black;
+        }
+
+        /*
+         * La posición relativa permite desplazar un elemento
+         * tomando como referencia su posición original.
+         */
+        .desplazada {
+            position: relative;
+
+            /* Desplaza la caja 50 px hacia la derecha */
+            left: 50px;
+
+            /* Desplaza la caja 30 px hacia abajo */
+            bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Propiedades top, bottom, left y right</h1>
+
+    <p>
+        Las siguientes cajas permiten observar el desplazamiento
+        de un elemento utilizando <code>position: relative</code>.
+    </p>
+
+    <div class="caja">
+        Posición original
+    </div>
+
+    <div class="caja desplazada">
+        Caja desplazada
+    </div>
+
+</body>
+</html>
